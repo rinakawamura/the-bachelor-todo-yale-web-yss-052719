@@ -584,8 +584,8 @@ data = {
 require "pry"
 def get_first_name_of_season_winner(data, season)
   winner = nil
-  data.each do |season, contestants|
-    if season == season
+  data.each do |season_data, contestants|
+    if season == season_data
       contestants.each do |contestant_hash|
         if contestant_hash[:status] == "Winner"
           winner = contestant_hash[:name]
