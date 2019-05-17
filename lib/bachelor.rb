@@ -229,6 +229,7 @@ def get_first_name_of_season_winner(data, season)
   return winner.split(" ").first
 end
 
+get_first_name_of_season_winner(data, "season 19")
 
 def get_contestant_name(data, occupation)
   # code here
