@@ -220,7 +220,7 @@ def get_first_name_of_season_winner(data, season)
     if season == season
       contestants.each do |contestant_hash|
         if contestant_hash[:status] = "Winner"
-          winner = contestant_hash[:"name"]
+          winner = contestant_hash[:name]
         end
         binding.pry
       end
