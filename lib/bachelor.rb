@@ -1,3 +1,4 @@
+require "pry"
 def get_first_name_of_season_winner(data, season)
   winner = nil
   data.each do |season, contestants|
@@ -9,6 +10,7 @@ def get_first_name_of_season_winner(data, season)
       end
     end
   end
+  puts winner
   return winner.split(" ").first
 end
 
