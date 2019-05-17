@@ -219,7 +219,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |season, contestants|
     if season == season
       contestants.each do |contestant_hash|
-        if contestant_hash[:status] = "Winner"
+        if contestant_hash[:status] == "Winner"
           winner = contestant_hash[:name]
         end
         binding.pry
