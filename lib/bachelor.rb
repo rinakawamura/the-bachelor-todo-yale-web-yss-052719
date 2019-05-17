@@ -413,11 +413,9 @@ def get_first_name_of_season_winner(data, season)
         if contestant_hash[:status] == "Winner"
           winner = contestant_hash[:name]
         end
-        #binding.pry
       end
     end
   end
-  puts winner.split(" ").first
   return winner.split(" ").first
 end
 
