@@ -1,5 +1,3 @@
-
-require "pry"
 def get_first_name_of_season_winner(data, season)
   winner = nil
   data.each do |season_data, contestants|
@@ -48,5 +46,15 @@ end
 
 
 def get_average_age_for_season(data, season)
-  # code here
+  total_age = 0
+  num_contestants = 0
+  data.each do |season_data, contestants|
+    if season_data == season
+      contestants.each do |contestant_hash|
+        total_age += contestant_hash["age"]
+        num_contestants += 1
+      end
+    end
+  end
+  return total_age/num_contestants
 end
